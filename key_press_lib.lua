@@ -1,4 +1,4 @@
--- just require this in your script and you can call the functions
+-- just do require("key_press_lib") in your script and you can call the functions
 
 local nv = native_invoker
 local function set_key(padIndex, control, amount)
