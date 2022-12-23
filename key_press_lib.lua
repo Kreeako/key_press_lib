@@ -1,12 +1,13 @@
 -- just do require("key_press_lib") in your script and you can call the functions
 
 local nv = native_invoker
+
 local function set_key(padIndex, control, amount)
     nv.begin_call()
     nv.push_arg_int(padIndex)
     nv.push_arg_int(control)
     nv.push_arg_float(amount)
-    nv.end_call(0xE8A25867FBA3B05E)
+    nv.end_call_2(0xE8A25867FBA3B05E)
     return nv.get_return_value_bool()
 end
 
