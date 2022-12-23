@@ -11,7 +11,7 @@ local function set_key(padIndex, control, amount)
     return nv.get_return_value_bool()
 end
 
--- call like this: mouse_pos(int x_position 0-100, int y_position 0-100)
+-- call like this: set_cursor_pos(int x_position 0-100, int y_position 0-100)
 local function set_cursor_pos(x, y)
     nv.begin_call()
     nv.push_arg_float(x / 100)
